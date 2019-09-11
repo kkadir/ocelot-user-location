@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace Location.Api
+namespace UserLocation.Services.Location.Api
 {
     public class Program
     {

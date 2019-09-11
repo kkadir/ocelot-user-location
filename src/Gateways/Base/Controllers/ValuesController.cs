@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace UserLocation.Services.Location.Api.Controllers
+namespace UserLocation.Gateways.Base.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -14,14 +14,14 @@ namespace UserLocation.Services.Location.Api.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "location-value1", "location-value2" };
+            return new string[] { "value1", "value2" };
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
-            return $"location-value-{id}";
+            return "value";
         }
 
         // POST api/values
